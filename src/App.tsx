@@ -54,7 +54,7 @@ function App() {
     try {
       await navigator.clipboard.writeText(email);
       setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
+      setTimeout(() => setCopied(false), 1500);
     } catch (err) {
       console.error("Failed to copy email:", err);
     }
@@ -77,9 +77,6 @@ function App() {
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-light text-slate-700 mb-6 tracking-tight">
             HELLO
           </h1>
-          {/* <p className="text-xl md:text-2xl text-slate-500 font-light max-w-2xl mx-auto">
-            Crafting digital experiences with passion and precision
-          </p> */}
         </div>
 
         <button
@@ -104,12 +101,6 @@ function App() {
           }`}
         >
           <div className="flex flex-col md:flex-row items-center gap-12">
-            {/* <div className="w-48 h-48 md:w-64 md:h-64 rounded-full bg-gradient-to-br from-pink-200 via-purple-200 to-indigo-200 flex items-center justify-center shadow-xl flex-shrink-0 overflow-hidden">
-              <div className="w-full h-full rounded-full bg-gradient-to-br from-rose-100 via-blue-100 to-teal-100 flex items-center justify-center">
-                <span className="text-slate-400 text-sm">Your Photo</span>
-              </div>
-            </div> */}
-
             <div className="text-center">
               <h2 className="text-4xl md:text-5xl font-light text-slate-700 mb-6">
                 IS IT ME
@@ -119,15 +110,6 @@ function App() {
                   <img src="/headshot.jpeg"></img>
                 </div>
               </div>
-              {/* <p className="text-lg text-slate-600 leading-relaxed mb-4">
-                I'm a creative professional passionate about building meaningful
-                digital experiences. With a focus on clean design and thoughtful
-                execution, I bring ideas to life.
-              </p>
-              <p className="text-lg text-slate-600 leading-relaxed">
-                My work combines technical expertise with an eye for aesthetics,
-                creating solutions that are both beautiful and functional.
-              </p> */}
             </div>
           </div>
         </div>
@@ -148,10 +130,6 @@ function App() {
           <h2 className=" text-center text-4xl md:text-5xl font-light text-slate-700 mb-8">
             YOU'RE LOOKING FOR?
           </h2>
-          {/* <p className="text-lg text-slate-600 leading-relaxed mb-12">
-            Interested in working together? I'd love to hear from you. Reach out
-            and let's create something amazing.
-          </p> */}
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
@@ -202,43 +180,6 @@ function App() {
           </div>
         </div>
       </section>
-
-      {/* Contact Section */}
-      {/* <section
-        ref={(el) => (sectionsRef.current[3] = el)}
-        className="min-h-screen flex items-center justify-center px-6 py-20"
-      >
-        <div
-          className={`max-w-2xl mx-auto text-center transition-all duration-1500 delay-400 ${
-            visibleSections.has(3)
-              ? "opacity-100 translate-y-0"
-              : "opacity-0 translate-y-8"
-          }`}
-        >
-          <h2 className="text-4xl md:text-5xl font-light text-slate-700 mb-8">
-            Let's Connect
-          </h2>
-          <p className="text-lg text-slate-600 leading-relaxed mb-12">
-            Interested in working together? I'd love to hear from you. Reach out
-            and let's create something amazing.
-          </p>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="mailto:hello@example.com"
-              className="px-8 py-4 rounded-full bg-white/70 backdrop-blur-sm text-slate-700 hover:bg-white hover:shadow-lg transition-all duration-300 font-light text-lg"
-            >
-              Get in Touch
-            </a>
-            <a
-              href="#"
-              className="px-8 py-4 rounded-full bg-gradient-to-r from-rose-200/70 to-teal-200/70 backdrop-blur-sm text-slate-700 hover:from-rose-200 hover:to-teal-200 hover:shadow-lg transition-all duration-300 font-light text-lg"
-            >
-              View Resume
-            </a>
-          </div>
-        </div>
-      </section> */}
     </div>
   );
 }

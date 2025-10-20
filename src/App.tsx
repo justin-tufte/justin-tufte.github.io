@@ -3,7 +3,7 @@ import { ChevronDown, Mail, Linkedin, FileText, Check } from "lucide-react";
 
 const email = "justin.tufte@gmail.com";
 const linkedinUrl = "https://www.linkedin.com/in/justin-tufte/";
-const resumeUrl = "/path-to-your-resume.pdf";
+const resumeUrl = "/Justin-Tufte-Resume.pdf";
 
 function App() {
   const [copied, setCopied] = useState(false);
